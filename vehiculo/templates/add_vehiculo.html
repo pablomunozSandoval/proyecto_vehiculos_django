@@ -1,0 +1,10 @@
+<!-- templates/vehiculo_agregar.html -->
+{% extends 'navbar/base.html' %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="rounded-1" >Enviar</button>
+    </form>
+{% endblock %}

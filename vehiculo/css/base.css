@@ -1,0 +1,15 @@
+
+
+.nav-link:active {
+    color: #f0f0f0;
+    background-color: #333;
+}
+
+/* También puedes hacer estilos para hover, visited, etc., si quieres un control más fino */
+a:hover {
+    color: #ffffff; /* Cambia el color al pasar el mouse */
+}
+
+a:visited {
+    color: #cccccc; /* Cambia el color después de haber visitado el enlace */
+}

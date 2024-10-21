@@ -1,0 +1,9 @@
+{% if user.is_authenticated %}
+<li class="nav-item">
+  <a class="nav-link" href="{% url 'list_vehiculo' %}">Listar</a>
+  {% if user.has_perm('vehiculo.visualizar_catalogo') %}
+  <!-- Aquí puedes agregar algún contenido adicional si el usuario tiene el permiso -->
+  <span class="badge badge-success">Puedes visualizar el catálogo</span>
+  {% endif %}
+</li>
+{% endif %}
